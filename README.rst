@@ -17,13 +17,14 @@ How to use it:
 .. code-block:: yaml
 
   gitfs_remotes:
-    - git+ssh://git@github.com/saltstack-formulas/resolver-formula.git
+    - https://github.com/saltstack-formulas/resolver-formula.git
 
 3. Add a pillar with your configuration items
 
 .. code-block:: yaml
 
   resolver:
+    domain: example.com
     searchpaths:
       - example.com
       - example.org
